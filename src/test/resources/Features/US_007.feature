@@ -2,13 +2,13 @@ Feature: [US_007] As a user, I would like to be able to register on the site to 
 
   Background: User opens the app
     Given User makes driver adjustments
-  @Hamza
+
   Scenario: [US_007 => TC01] The profile icon should be visible and active at the bottom bar of the home page and SignUp button should be visible and active under the SignUp form.
     Then Verifies that the profile button is visible and active.
     And Click on your profile icon.
     Then Verifies that the sign up button is visible and active.
     And Driver turns off
-
+  @Hamza
   Scenario: [US_007 => TC02] The SignUp form must have fields that cannot be left blank (Firstname, Email or Phone, Password) and The email entered for email entry must meet the valid email criteria.
     And Click on your profile icon.
     And Click on your sign up icon.
@@ -16,7 +16,7 @@ Feature: [US_007] As a user, I would like to be able to register on the site to 
     When Click on the use email instead link.
     And Enter a valid email in the email box.
     When Enter a valid password in the password box.
-    And Click the "sign up" button.
+    And Click the sign up button.
     Then Verify that the message user created successfully is displayed.
     And Driver turns off
 

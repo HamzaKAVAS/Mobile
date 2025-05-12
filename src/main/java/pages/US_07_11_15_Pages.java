@@ -1,0 +1,34 @@
+package pages;
+
+import io.appium.java_client.pagefactory.AndroidFindBy;
+import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.PageFactory;
+
+import static drivers.Driver.getAppiumDriver;
+
+public class US_07_11_15_Pages {
+
+    public US_07_11_15_Pages() {
+        PageFactory.initElements(new AppiumFieldDecorator(getAppiumDriver()), this);
+    }
+
+    @AndroidFindBy(xpath = "(//android.widget.EditText)[1]")
+    public WebElement nameBox;
+
+    @AndroidFindBy(xpath = "//android.view.View[@content-desc=\"*Use Email Instead\"]")
+    public WebElement emailInsteadButton;
+
+    @AndroidFindBy(xpath = "(//android.widget.EditText)[2]")
+    public WebElement emailBox;
+
+    @AndroidFindBy(xpath = "(//android.widget.EditText)[3]")
+    public WebElement passwordBox;
+
+    @AndroidFindBy(xpath = "(//android.view.View[@content-desc=\"Sign Up\"])[2]")
+    public WebElement signUpButtonLink;
+
+    @AndroidFindBy(xpath = "(//android.widget.ImageView)[1]")
+    public WebElement successfullyMessage;
+
+}
