@@ -33,7 +33,7 @@ public class Driver {
                 case "Android":
                     options = new UiAutomator2Options();
                     options.setPlatformName("Android").setAutomationName("UiAutomator2");
-                    options.setApp("C:\\Users\\Cansu\\IdeaProjects\\com.QueryCard.Mobile\\Apps\\querycart2006.apk");
+                    options.setApp("C:\\Users\\Hamza\\IdeaProjects\\MobilProjem\\Apps\\querycart2006.apk");
                     options.setAppPackage("com.wise.querycart");
                     options.setAppActivity("com.wise.querycart.MainActivity");
                     options.setUdid("emulator-5554");
@@ -43,7 +43,7 @@ public class Driver {
 
                     try {
                         driver = new AndroidDriver(
-                                new URL("http://0.0.0.0:4723"), options
+                                new URL("http://127.0.0.1:4723"), options
                         );
                     } catch (MalformedURLException e) {
                         throw new RuntimeException(e);

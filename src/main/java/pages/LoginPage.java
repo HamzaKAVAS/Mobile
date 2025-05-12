@@ -38,5 +38,8 @@ public class LoginPage {
     @AndroidFindBy (xpath = "//*[@content-desc='Logout']")
     public WebElement LogoutButton;
 
+    @AndroidFindBy(xpath = "//android.view.View[@content-desc=\"Sign Up\"]")
+    public WebElement SignUpButton;
+
 
 }
