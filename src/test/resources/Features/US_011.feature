@@ -1,8 +1,9 @@
+
 Feature: [US_011] As a registered user, I would like to be able to create a favorites list on the site.
 
   Background: User opens the app
     Given User makes driver adjustments
-  @Hamza
+
   Scenario: [US_011 => TC01] Test to select favorite products and add to wishlist.
     And Click on your profile icon.
     And Click on your sign in icon.

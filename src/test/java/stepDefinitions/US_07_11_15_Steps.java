@@ -145,5 +145,33 @@ public class US_07_11_15_Steps {
     public void enterAValidUserPasswordInThePasswordBox() {
         myStepsPage.emailBox.click();
         myStepsPage.emailBox.sendKeys(ConfigReader.getProperty("hamzaCustomerPassword"));
+        ReusableMethods.wait(2);
     }
+
+    @When("Click on the relevant product.")
+    public void click_on_the_relevant_product() {
+        myStepsPage.relevantProduct.click();
+        ReusableMethods.wait(2);
+    }
+
+    @When("While on the product page, remove the product from your favorites by scrolling down.")
+    public void while_on_the_product_page_remove_the_product_from_your_favorites_by_scrolling_down() {
+        ReusableMethods.ekranKaydirmaMethoduOguz(485,1736,485,669,1000);
+        ReusableMethods.wait(2);
+        myStepsPage.relevantFavorite.click();
+        ReusableMethods.wait(2);
+    }
+
+    @Then("verify the warning message that the product has been removed from the wishlist.")
+    public void verify_the_warning_message_that_the_product_has_been_removed_from_the_wishlist() {
+        Assert.assertTrue(myStepsPage.wishlistComeWarningMessage.isDisplayed());
+        ReusableMethods.wait(2);
+    }
+
+    @Then("add the product back to wishlist.")
+    public void add_the_product_back_to_wishlist() {
+        myStepsPage.relevantFavorite.click();
+        ReusableMethods.wait(2);
+    }
+
 }
