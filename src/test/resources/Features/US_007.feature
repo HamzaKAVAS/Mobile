@@ -1,3 +1,4 @@
+
 Feature: [US_007] As a user, I would like to be able to register on the site to take advantage of its functions.
 
   Background: User opens the app
@@ -8,7 +9,7 @@ Feature: [US_007] As a user, I would like to be able to register on the site to 
     And Click on your profile icon.
     Then Verifies that the sign up button is visible and active.
     And Driver turns off
-  @Hamza
+
   Scenario: [US_007 => TC02] The SignUp form must have fields that cannot be left blank (Firstname, Email or Phone, Password) and The email entered for email entry must meet the valid email criteria.
     And Click on your profile icon.
     And Click on your sign up icon.

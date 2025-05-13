@@ -31,4 +31,7 @@ public class US_07_11_15_Pages {
     @AndroidFindBy(xpath = "(//android.widget.ImageView)[1]")
     public WebElement successfullyMessage;
 
+    @AndroidFindBy(xpath = "//android.widget.ImageView")
+    public WebElement errorMessage;
+
 }
