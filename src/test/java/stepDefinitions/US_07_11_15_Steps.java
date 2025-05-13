@@ -108,4 +108,42 @@ public class US_07_11_15_Steps {
         ReusableMethods.wait(2);
     }
 
+    @Given("Click on your sign in icon.")
+    public void click_on_your_sign_in_icon() {
+        myStepsPage.profileSignInButton.click();
+        ReusableMethods.wait(2);
+    }
+
+    @When("Click the sign in button.")
+    public void click_the_sign_in_button() {
+        loginPage.SignInButton2.click();
+        ReusableMethods.wait(2);
+    }
+
+    @When("Click to add two products on the homepage to your wishlist.")
+    public void click_to_add_two_products_on_the_homepage_to_your_wishlist() {
+        myStepsPage.homepageFirstHeart.click();
+        ReusableMethods.wait(2);
+        myStepsPage.homepageSecondHeart.click();
+        ReusableMethods.wait(2);
+    }
+
+    @Then("Added to wishlist verify warning text.")
+    public void added_to_wishlist_verify_warning_text() {
+        Assert.assertTrue(myStepsPage.wishlistComeWarningMessage.isDisplayed());
+        ReusableMethods.wait(2);
+    }
+
+    @And("Enter a valid user email in the email box.")
+    public void enterAValidUserEmailInTheEmailBox() {
+        myStepsPage.nameBox.click();
+        myStepsPage.nameBox.sendKeys(ConfigReader.getProperty("hamzaCustomerEmail"));
+        ReusableMethods.wait(2);
+    }
+
+    @When("Enter a valid user password in the password box.")
+    public void enterAValidUserPasswordInThePasswordBox() {
+        myStepsPage.emailBox.click();
+        myStepsPage.emailBox.sendKeys(ConfigReader.getProperty("hamzaCustomerPassword"));
+    }
 }

@@ -34,4 +34,20 @@ public class US_07_11_15_Pages {
     @AndroidFindBy(xpath = "//android.widget.ImageView")
     public WebElement errorMessage;
 
+    @AndroidFindBy(xpath = "//android.view.View[@content-desc=\"Sign In\"]")
+    public WebElement profileSignInButton;
+
+    @AndroidFindBy(xpath = "//*[@text='Don’t allow']")
+    public WebElement maybeDontAllow;
+
+    @AndroidFindBy(uiAutomator = "new UiSelector().className(\"android.widget.ImageView\").instance(2)")
+    public WebElement homepageFirstHeart;
+
+    @AndroidFindBy(uiAutomator = "new UiSelector().className(\"android.widget.ImageView\").instance(9)")
+    public WebElement homepageSecondHeart;
+
+    @AndroidFindBy(uiAutomator = "new UiSelector().className(\"android.widget.ImageView\").instance(0)")
+    public WebElement wishlistComeWarningMessage;
+
+
 }
