@@ -55,5 +55,8 @@ public class US_07_11_15_Pages {
     @AndroidFindBy(uiAutomator = "new UiSelector().description(\"Favorite\")")
     public WebElement relevantFavorite;
 
+    @AndroidFindBy(uiAutomator = "new UiSelector().description(\"Women\")")
+    public WebElement homepageScrollWomenCategory;
+
 
 }

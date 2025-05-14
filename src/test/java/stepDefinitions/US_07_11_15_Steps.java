@@ -156,7 +156,7 @@ public class US_07_11_15_Steps {
 
     @When("While on the product page, remove the product from your favorites by scrolling down.")
     public void while_on_the_product_page_remove_the_product_from_your_favorites_by_scrolling_down() {
-        ReusableMethods.ekranKaydirmaMethoduOguz(485,1736,485,669,1000);
+        ReusableMethods.ekranKaydirmaMethoduOguz(485, 1736, 485, 669, 1000);
         ReusableMethods.wait(2);
         myStepsPage.relevantFavorite.click();
         ReusableMethods.wait(2);
@@ -171,6 +171,22 @@ public class US_07_11_15_Steps {
     @Then("add the product back to wishlist.")
     public void add_the_product_back_to_wishlist() {
         myStepsPage.relevantFavorite.click();
+        ReusableMethods.wait(2);
+    }
+
+    @Then("Verify that the women category and subheadings are displayed in the categories section on the homepage.")
+    public void verify_that_the_women_category_and_subheadings_are_displayed_in_the_categories_section_on_the_homepage() {
+        ReusableMethods.ekranKaydirmaMethoduOguz(900, 1035, 215, 1035, 1000);
+        ReusableMethods.wait(2);
+        ReusableMethods.ekranKaydirmaMethoduOguz(900, 1035, 215, 1035, 1000);
+        ReusableMethods.wait(2);
+        ReusableMethods.ekranKaydirmaMethoduOguz(900, 1035, 215, 1035, 1000);
+        ReusableMethods.wait(2);
+        ReusableMethods.ekranKaydirmaMethoduOguz(900, 1035, 215, 1035, 1000);
+        ReusableMethods.wait(2);
+        ReusableMethods.ekranKaydirmaMethoduOguz(900, 1035, 350, 1035, 1000);
+        ReusableMethods.wait(2);
+        Assert.assertTrue(myStepsPage.homepageScrollWomenCategory.isDisplayed());
         ReusableMethods.wait(2);
     }
 
