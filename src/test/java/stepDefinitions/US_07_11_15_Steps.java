@@ -192,37 +192,56 @@ public class US_07_11_15_Steps {
 
     @When("Click on women in the category.")
     public void click_on_women_in_the_category() {
-
+        ReusableMethods.ekranKaydirmaMethoduOguz(900, 1035, 215, 1035, 1000);
+        ReusableMethods.wait(2);
+        ReusableMethods.ekranKaydirmaMethoduOguz(900, 1035, 215, 1035, 1000);
+        ReusableMethods.wait(2);
+        ReusableMethods.ekranKaydirmaMethoduOguz(900, 1035, 215, 1035, 1000);
+        ReusableMethods.wait(2);
+        ReusableMethods.ekranKaydirmaMethoduOguz(900, 1035, 215, 1035, 1000);
+        ReusableMethods.wait(2);
+        ReusableMethods.ekranKaydirmaMethoduOguz(900, 1035, 350, 1035, 1000);
+        ReusableMethods.wait(2);
+        myStepsPage.homepageScrollWomenCategory.click();
+        ReusableMethods.wait(2);
     }
 
     @When("Click on the first product on the page that opens.")
     public void click_on_the_first_product_on_the_page_that_opens() {
-
+        myStepsPage.womenCategoryFirstProduct.click();
+        ReusableMethods.wait(2);
     }
 
     @When("Choose size M.")
     public void choose_size_m() {
-
+        myStepsPage.sizeMediumButton.click();
+        ReusableMethods.wait(2);
     }
 
-    @When("Set the Quantity to {int}.")
-    public void set_the_quantity_to(Integer miktar) {
-
+    @When("Set the Quantity to 2.")
+    public void set_the_quantity_to_second() {
+        ReusableMethods.ekranKaydirmaMethoduOguz(540, 1603, 540, 508, 1000);
+        ReusableMethods.wait(2);
+        myStepsPage.quantityNumberButton.click();
+        ReusableMethods.wait(2);
     }
 
     @When("Click Add to cart.")
     public void click_add_to_cart() {
-
+        myStepsPage.addToCartButtonFirstProduct.click();
+        ReusableMethods.wait(2);
     }
 
     @Then("Confirm the warning message that the product has been successfully added to the cart.")
     public void confirm_the_warning_message_that_the_product_has_been_successfully_added_to_the_cart() {
-
+        Assert.assertTrue(myStepsPage.wishlistComeWarningMessage.isDisplayed());
+        ReusableMethods.wait(2);
     }
 
     @Then("Add the product to your request favorites.")
     public void add_the_product_to_your_request_favorites() {
-
+        myStepsPage.relevantFavorite.click();
+        ReusableMethods.wait(2);
     }
 
 }

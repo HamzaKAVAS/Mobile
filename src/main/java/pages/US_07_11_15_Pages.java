@@ -58,5 +58,17 @@ public class US_07_11_15_Pages {
     @AndroidFindBy(uiAutomator = "new UiSelector().description(\"Women\")")
     public WebElement homepageScrollWomenCategory;
 
+    @AndroidFindBy(xpath = "(//android.view.View)[10]")
+    public WebElement womenCategoryFirstProduct;
+
+    @AndroidFindBy(uiAutomator = "new UiSelector().description(\"M\")")
+    public WebElement sizeMediumButton;
+
+    @AndroidFindBy(xpath = "//android.widget.ScrollView/android.widget.ImageView[2]")
+    public WebElement quantityNumberButton;
+
+    @AndroidFindBy(uiAutomator = "new UiSelector().description(\"Add To Cart\")")
+    public WebElement addToCartButtonFirstProduct;
+
 
 }
