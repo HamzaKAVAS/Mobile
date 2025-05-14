@@ -1,3 +1,4 @@
+@Hamza
 Feature: [US_015] As a registered user, I would like to be able to see the categories and products of the Women menu on the home page.
 
   Background: User opens the app
@@ -29,7 +30,7 @@ Feature: [US_015] As a registered user, I would like to be able to see the categ
     And Add the product to your request favorites.
     Then Added to wishlist verify warning text.
     And Driver turns off
-  @Hamza
+
   Scenario: [US_015 => TC03] Filtering icons should be visible and active.
     And Click on your profile icon.
     And Click on your sign in icon.

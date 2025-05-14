@@ -257,19 +257,19 @@ public class US_07_11_15_Steps {
     public void verify_that_the_options_on_the_filtering_page_are_viewable_and_clickable() {
         Assert.assertTrue(myStepsPage.filterSortBy.isDisplayed());
         ReusableMethods.wait(2);
-        Assert.assertTrue(myStepsPage.filterSortBy.isSelected());
+        Assert.assertTrue(myStepsPage.filterSortBy.isEnabled());
         ReusableMethods.wait(2);
         Assert.assertTrue(myStepsPage.filterBrands.isDisplayed());
         ReusableMethods.wait(2);
-        Assert.assertTrue(myStepsPage.filterBrands.isSelected());
+        Assert.assertTrue(myStepsPage.filterBrands.isEnabled());
         ReusableMethods.wait(2);
         Assert.assertTrue(myStepsPage.filterSize.isDisplayed());
         ReusableMethods.wait(2);
-        Assert.assertTrue(myStepsPage.filterSize.isSelected());
+        Assert.assertTrue(myStepsPage.filterSize.isEnabled());
         ReusableMethods.wait(2);
         Assert.assertTrue(myStepsPage.filterColor.isDisplayed());
         ReusableMethods.wait(2);
-        Assert.assertTrue(myStepsPage.filterColor.isSelected());
+        Assert.assertTrue(myStepsPage.filterColor.isEnabled());
         ReusableMethods.wait(2);
     }
 

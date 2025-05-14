@@ -1,4 +1,4 @@
-
+@Hamza
 Feature: [US_011] As a registered user, I would like to be able to create a favorites list on the site.
 
   Background: User opens the app
