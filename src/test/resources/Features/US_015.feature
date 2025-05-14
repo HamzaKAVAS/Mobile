@@ -12,7 +12,7 @@ Feature: [US_015] As a registered user, I would like to be able to see the categ
     And Click the sign in button.
     Then Verify that the women category and subheadings are displayed in the categories section on the homepage.
     And Driver turns off
-  @Hamza
+
   Scenario: [US_015 => TC02] The products on the Women category page should be able to perform actions (add to cart, add to favorites list and view).
     And Click on your profile icon.
     And Click on your sign in icon.
@@ -29,7 +29,7 @@ Feature: [US_015] As a registered user, I would like to be able to see the categ
     And Add the product to your request favorites.
     Then Added to wishlist verify warning text.
     And Driver turns off
-
+  @Hamza
   Scenario: [US_015 => TC03] Filtering icons should be visible and active.
     And Click on your profile icon.
     And Click on your sign in icon.

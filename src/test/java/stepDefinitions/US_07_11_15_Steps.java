@@ -2,18 +2,13 @@ package stepDefinitions;
 
 import config.ConfigReader;
 import io.cucumber.java.en.*;
-import org.asynchttpclient.util.Assertions;
 import org.junit.Assert;
-import org.openqa.selenium.interactions.Actions;
 import pages.LoginPage;
 import pages.US_07_11_15_Pages;
 import utilities.ReusableMethods;
 
-import static drivers.Driver.getAppiumDriver;
-
 public class US_07_11_15_Steps {
 
-    Actions actions = new Actions(getAppiumDriver());
     LoginPage loginPage = new LoginPage();
     US_07_11_15_Pages myStepsPage = new US_07_11_15_Pages();
 
@@ -244,4 +239,49 @@ public class US_07_11_15_Steps {
         ReusableMethods.wait(2);
     }
 
+    @Then("Verify that the filtering icon is visible and active.")
+    public void verify_that_the_filtering_icon_is_visible_and_active() {
+        Assert.assertTrue(myStepsPage.homepageFirstHeart.isDisplayed());
+        ReusableMethods.wait(2);
+        Assert.assertTrue(myStepsPage.homepageFirstHeart.isEnabled());
+        ReusableMethods.wait(2);
+    }
+
+    @Then("Click on the filter icon.")
+    public void click_on_the_filter_icon() {
+        myStepsPage.homepageFirstHeart.click();
+        ReusableMethods.wait(2);
+    }
+
+    @Then("Verify that the options on the filtering page are viewable and clickable.")
+    public void verify_that_the_options_on_the_filtering_page_are_viewable_and_clickable() {
+        Assert.assertTrue(myStepsPage.filterSortBy.isDisplayed());
+        ReusableMethods.wait(2);
+        Assert.assertTrue(myStepsPage.filterSortBy.isSelected());
+        ReusableMethods.wait(2);
+        Assert.assertTrue(myStepsPage.filterBrands.isDisplayed());
+        ReusableMethods.wait(2);
+        Assert.assertTrue(myStepsPage.filterBrands.isSelected());
+        ReusableMethods.wait(2);
+        Assert.assertTrue(myStepsPage.filterSize.isDisplayed());
+        ReusableMethods.wait(2);
+        Assert.assertTrue(myStepsPage.filterSize.isSelected());
+        ReusableMethods.wait(2);
+        Assert.assertTrue(myStepsPage.filterColor.isDisplayed());
+        ReusableMethods.wait(2);
+        Assert.assertTrue(myStepsPage.filterColor.isSelected());
+        ReusableMethods.wait(2);
+    }
+
+    @Then("Click on the Sort By.")
+    public void click_on_the_sort_by() {
+        myStepsPage.filterSortBy.click();
+        ReusableMethods.wait(2);
+    }
+
+    @Then("Click on the Price Low to High.")
+    public void click_on_the_price_low_to_high() {
+        myStepsPage.filterPriceLowToHigh.click();
+        ReusableMethods.wait(2);
+    }
 }

@@ -70,5 +70,18 @@ public class US_07_11_15_Pages {
     @AndroidFindBy(uiAutomator = "new UiSelector().description(\"Add To Cart\")")
     public WebElement addToCartButtonFirstProduct;
 
+    @AndroidFindBy(uiAutomator = "new UiSelector().description(\"Sort By\")")
+    public WebElement filterSortBy;
 
+    @AndroidFindBy(uiAutomator = "new UiSelector().description(\"Brands\")")
+    public WebElement filterBrands;
+
+    @AndroidFindBy(uiAutomator = "new UiSelector().description(\"size\")")
+    public WebElement filterSize;
+
+    @AndroidFindBy(uiAutomator = "new UiSelector().description(\"color\")")
+    public WebElement filterColor;
+
+    @AndroidFindBy(uiAutomator = "new UiSelector().description(\"Price Low To High\")")
+    public WebElement filterPriceLowToHigh;
 }
