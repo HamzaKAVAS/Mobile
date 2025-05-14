@@ -190,4 +190,39 @@ public class US_07_11_15_Steps {
         ReusableMethods.wait(2);
     }
 
+    @When("Click on women in the category.")
+    public void click_on_women_in_the_category() {
+
+    }
+
+    @When("Click on the first product on the page that opens.")
+    public void click_on_the_first_product_on_the_page_that_opens() {
+
+    }
+
+    @When("Choose size M.")
+    public void choose_size_m() {
+
+    }
+
+    @When("Set the Quantity to {int}.")
+    public void set_the_quantity_to(Integer miktar) {
+
+    }
+
+    @When("Click Add to cart.")
+    public void click_add_to_cart() {
+
+    }
+
+    @Then("Confirm the warning message that the product has been successfully added to the cart.")
+    public void confirm_the_warning_message_that_the_product_has_been_successfully_added_to_the_cart() {
+
+    }
+
+    @Then("Add the product to your request favorites.")
+    public void add_the_product_to_your_request_favorites() {
+
+    }
+
 }

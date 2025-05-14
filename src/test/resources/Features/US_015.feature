@@ -2,7 +2,7 @@ Feature: [US_015] As a registered user, I would like to be able to see the categ
 
   Background: User opens the app
     Given User makes driver adjustments
-  @Hamza
+
   Scenario: [US_015 => TC01] The women category window and its subcategories should be displayed in the body section of the home page.
     And Click on your profile icon.
     And Click on your sign in icon.
@@ -12,7 +12,7 @@ Feature: [US_015] As a registered user, I would like to be able to see the categ
     And Click the sign in button.
     Then Verify that the women category and subheadings are displayed in the categories section on the homepage.
     And Driver turns off
-
+  @Hamza
   Scenario: [US_015 => TC02] The products on the Women category page should be able to perform actions (add to cart, add to favorites list and view).
     And Click on your profile icon.
     And Click on your sign in icon.
