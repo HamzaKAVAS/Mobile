@@ -5,3 +5,7 @@ Feature: As a registered user, I want to be able to change my password when I fo
 
   Scenario: (Test Case 1) Forgot Password Link Visibility and Activity
 
+    When User clicks the button with description "Profile"
+    And User clicks the button with description "Sign In"
+    Then User verifies the button with description "Forgot Password" is visible
+    And Driver turns off
