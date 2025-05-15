@@ -1,0 +1,1 @@
+Feature: As a registered user, I want to be able to change my password when I forget it
