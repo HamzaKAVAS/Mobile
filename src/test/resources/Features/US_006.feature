@@ -9,3 +9,5 @@ Feature: As a registered user, I want to be able to change my password when I fo
     And User clicks the button with description "Sign In"
     Then User verifies the button with description "Forgot Password" is visible
     And Driver turns off
+
+  Scenario: (Test Case 2) Password Reset with Valid Email
