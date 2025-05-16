@@ -18,3 +18,23 @@ Feature: As a user, I want to be able to see all the categories listed under the
       | Men     |
       | Women   |
       | Juniors |
+
+  Scenario Outline: Activeness of the filter icons
+    * User clicks the button with description "Category"
+    * The "<filter icon>" under the "<heading>" category should be clickable
+    * Driver turns off
+
+    Examples:
+      | heading | filter icon |
+      | Men     | Sort By     |
+      | Men     | Brands      |
+      | Men     | size        |
+      | Men     | color       |
+      | Women   | Sort By     |
+      | Women   | Brands      |
+      | Women   | size        |
+      | Women   | color       |
+      | Juniors | Sort By     |
+      | Juniors | Brands      |
+      | Juniors | size        |
+      | Juniors | color       |
