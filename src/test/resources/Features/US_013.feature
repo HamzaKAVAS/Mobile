@@ -28,3 +28,6 @@ Feature: As a registered user, I would like to be able to see the categories and
     * Driver turns off
 
   Scenario: Activeness of the filter icons
+    * User clicks the button with description "Men"
+    * The "Sort By" under the Men category should be clickable
+    * Driver turns off
