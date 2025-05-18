@@ -19,3 +19,10 @@ Feature: As a registered user, I would like to be able to see the categories and
     * Driver turns off
 
   Scenario: Adding to Wishlist under the Men category
+    * User clicks the button with description "Men"
+    * User clicks the button with itemName "Adidas 3-Stripes Cushioned Crew Socks" and "0 (0  Reviews)" and "$15.00" and "Black"
+    * User swipes to screen coordinates 671, 2587, 700, 970
+    * User clicks the button with description "Favorite"
+    * "Added to Wishlist" message should be visible
+    * The "Product Details" should be visible
+    * Driver turns off
