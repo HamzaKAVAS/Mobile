@@ -26,3 +26,5 @@ Feature: As a registered user, I would like to be able to see the categories and
     * "Added to Wishlist" message should be visible
     * The "Product Details" should be visible
     * Driver turns off
+
+  Scenario: Activeness of the filter icons
