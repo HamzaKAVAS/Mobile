@@ -17,3 +17,5 @@ Feature: As a registered user, I would like to be able to see the categories and
     * "Product added to cart" message should be visible
     * The "Product Details" should be visible
     * Driver turns off
+
+  Scenario: Adding to Wishlist under the Men category
