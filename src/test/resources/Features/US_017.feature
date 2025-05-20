@@ -24,3 +24,9 @@ Feature: As a registered user, I would like to have a page on the site where I c
     * Driver turns off
 
   Scenario: Deleting a registered address on the Address page
+    * User clicks the button with description "Profile"
+    * User clicks the button with description "Address"
+    * User selects a registered address to delete
+    * User clicks the button with description "Delete"
+    * "Address Deleted Successfuly" message should be visible
+    * Driver turns off
