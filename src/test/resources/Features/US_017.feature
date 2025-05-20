@@ -22,3 +22,5 @@ Feature: As a registered user, I would like to have a page on the site where I c
     * User clicks the button with description "Update Address"
     * "Address Updated Successfuly" message should be visible
     * Driver turns off
+
+  Scenario: Deleting a registered address on the Address page
