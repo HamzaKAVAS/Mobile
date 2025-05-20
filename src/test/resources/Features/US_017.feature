@@ -14,3 +14,5 @@ Feature: As a registered user, I would like to have a page on the site where I c
     * User clicks the button with description "Address"
     * The "Add New Address" button should be visible and clickable
     * Driver turns off
+
+  Scenario: Editing a registered address on the Address page
