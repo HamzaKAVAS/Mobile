@@ -10,3 +10,5 @@ Feature: As a registered user, I want to change my password on my dashboard page
     And Confirms that you are redirected to the Change Password page
     Then Clicks the back button to exit
     And  Goes to the homepage for the exit process
+
+  Scenario: To test that the textbox boxes on the Changes Password page are functional
