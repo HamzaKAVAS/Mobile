@@ -35,3 +35,10 @@ Feature: As a registered user, I want to change my password on my dashboard page
 
   Scenario: To test that you cannot change the password when the OldPassword textbox
   on the Changes Password page is empty
+
+    Given User open the application
+    And User logs into the application with "TST-001UserEmail" and "applicationPassword" password
+    Then User clicks on the profile icon
+    Then Clicks on the “Change Password” link
+    And Fill in the textboxes for password change  and "cns" as "cns"
+    And confirms that no password change was made when the old password box is empty
