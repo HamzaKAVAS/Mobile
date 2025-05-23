@@ -23,3 +23,5 @@ Feature: As a registered user, I want to change my password on my dashboard page
     And Confirm the visibility of the Save Changes button
     Then Clicks the back button to exit
     And  Goes to the homepage for the exit process
+
+  Scenario:  To test that the Save Changes button on the Changes Password page is visible and functional
