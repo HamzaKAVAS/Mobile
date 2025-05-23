@@ -32,3 +32,6 @@ Feature: As a registered user, I want to change my password on my dashboard page
     Then Clicks on the “Change Password” link
     And Clicks the Save Changes button
     And Confirms that the Save Changes button is functional
+
+  Scenario: To test that you cannot change the password when the OldPassword textbox
+  on the Changes Password page is empty
