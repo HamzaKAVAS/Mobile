@@ -25,3 +25,10 @@ Feature: As a registered user, I want to change my password on my dashboard page
     And  Goes to the homepage for the exit process
 
   Scenario:  To test that the Save Changes button on the Changes Password page is visible and functional
+
+    Given User open the application
+    And User logs into the application with "TST-001UserEmail" and "applicationPassword" password
+    Then User clicks on the profile icon
+    Then Clicks on the “Change Password” link
+    And Clicks the Save Changes button
+    And Confirms that the Save Changes button is functional
