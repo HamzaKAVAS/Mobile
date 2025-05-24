@@ -42,3 +42,6 @@ Feature: As a registered user, I want to change my password on my dashboard page
     Then Clicks on the “Change Password” link
     And Fill in the textboxes for password change  and "cns" as "cns"
     And confirms that no password change was made when the old password box is empty
+
+  Scenario:  To test that the “NewPassword” textbox on the Changes Password page
+  cannot be changed when it is empty
