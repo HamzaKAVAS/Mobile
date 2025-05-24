@@ -55,3 +55,10 @@ Feature: As a registered user, I want to change my password on my dashboard page
 
   Scenario: To test that the “ConfirmPassword” textbox on the Changes Password
   page cannot be changed when it is empty
+
+    Given User open the application
+    And User logs into the application with "TST-001UserEmail" and "applicationPassword" password
+    Then User clicks on the profile icon
+    Then Clicks on the “Change Password” link
+    And  Fill in the textboxes confirm password change "applicationPassword" as "TST-001confirmPassword"
+    And ConfirmPassword confirms that the password has not been changed when the box is empty
