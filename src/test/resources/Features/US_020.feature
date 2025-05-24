@@ -52,3 +52,6 @@ Feature: As a registered user, I want to change my password on my dashboard page
     Then Clicks on the “Change Password” link
     And  Fill in the textboxes for password change "applicationPassword" as "TST-001confirmPassword"
     And When the new password box is empty, it confirms that no password change has been made
+
+  Scenario: To test that the “ConfirmPassword” textbox on the Changes Password
+  page cannot be changed when it is empty
