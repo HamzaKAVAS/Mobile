@@ -65,3 +65,9 @@ Feature: As a registered user, I want to change my password on my dashboard page
 
   Scenario: To test that the s change is made when a password is entered in the textboxes
   on the Changes Password page
+
+    Given User open the application
+    And User logs into the application with "TST-001UserEmail" and "applicationPassword" password
+    Then User clicks on the profile icon
+    Then Clicks on the “Change Password” link
+    And  Fill in the textboxes confirm password change "applicationPassword" as "TST-001newPassword" and "TST-001confirmPassword"
