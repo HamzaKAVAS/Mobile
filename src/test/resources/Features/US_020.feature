@@ -71,3 +71,5 @@ Feature: As a registered user, I want to change my password on my dashboard page
     Then User clicks on the profile icon
     Then Clicks on the “Change Password” link
     And  Fill in the textboxes confirm password change "applicationPassword" as "TST-001newPassword" and "TST-001confirmPassword"
+
+  Scenario: Test that the “Save Changes” button can redirect to the profile page
